@@ -1,8 +1,9 @@
 steps:
     - name: 'gcr.io/cloud-builders/docker'
-      args: ['build','-t','gcr.io/$PROJECT_ID/devops-image:v0.1'.']
+      args: ['build','-t','gcr.io/$PROJECT_ID/devops-image:v0.1', '.']
 
-image: 
+      
+images: 
     - name: 'gcr.io/$PROJECT_ID/devops-image:v0.1'
 
 options:
